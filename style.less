@@ -1,0 +1,48 @@
+.marginPadding (@margin, @padding) {
+    margin: @margin;
+    padding: @padding;
+}
+
+.size (@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+html, html * {
+    .marginPadding(0, 0);
+    /* border: solid red 1px; */
+    box-sizing: border-box;
+}
+
+html, body {
+    .size(100%, 100%)
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    .size(90%, 100%)
+}
+
+h1 {
+   text-align: center;
+   .marginPadding(auto, 2vmin);
+}
+
+#search {
+    margin-left: auto;
+    margin-right: auto;
+    .size(90%, 10vmin);
+    display: flex;
+    margin-top: 10vmin;
+}
+
+input {
+    flex-grow: 2;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+}
+
+#resaults {
+    margin-top: 5vmin;
+}

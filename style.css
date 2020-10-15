@@ -1,0 +1,39 @@
+html,
+html * {
+  margin: 0;
+  padding: 0;
+  /* border: solid red 1px; */
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  margin: auto;
+  padding: 2vmin;
+}
+#search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 10vmin;
+  display: flex;
+  margin-top: 10vmin;
+}
+input {
+  flex-grow: 2;
+  padding-left: 2vmin;
+  padding-right: 2vmin;
+}
+#resaults {
+  margin-top: 5vmin;
+}
